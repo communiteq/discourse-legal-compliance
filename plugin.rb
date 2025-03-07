@@ -8,7 +8,16 @@
 
 enabled_site_setting :discourse_legal_compliance_enabled
 
+module ::LegalCompliance
+  PLUGIN_NAME = "discourse-legal-compliance"
+end
+
+register_asset "stylesheets/legal_compliance.scss"
+require_relative "lib/legal_compliance/engine"
+
 after_initialize do
+
+
   register_search_advanced_filter(/upload:(.+)$/) do |posts, match|
     sha1_match = match.scan(/[a-fA-F0-9]{40}/)
     if sha1_match.present?

@@ -1,4 +1,22 @@
 en:
   js:
-    discourse_legal_compliance_enabled:
-      name: value
+    legal_compliance:
+      delete_uploads_button: "Delete Uploads..."
+      delete_uploads_modal:
+        title: "Delete Uploads from Post"
+        success: "Uploads successfully deleted."
+        table:
+          filename: "Original Filename"
+          sha1: "SHA1"
+          url: "URL"
+          view: "View"
+        confirm_button:
+          label: "Delete Selected Uploads"
+        cancel_button:
+          label: "Cancel"
+    admin:
+      logs:
+        staff_actions:
+          actions:
+            delete_upload: "delete upload"
+
