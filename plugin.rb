@@ -2,7 +2,7 @@
 
 # name: discourse-legal-compliance
 # about: Provides functions needed to be GDPR/CCPA/DMCA/OSA
-# version: 1.0.1
+# version: 1.0.2
 # authors: Communiteq
 # url: https://github.com/communiteq/discourse-legal-compliance
 

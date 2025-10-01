@@ -26,7 +26,7 @@ export default class LegalComplianceDeleteUploadsButton extends Component {
   <template>
     {{#if this.mustShow}}
       <DButton
-        @action={{action "openDeletionModal"}}
+        @action={{this.openDeletionModal}}
         class="btn-primary btn-warn"
         @label="legal_compliance.delete_uploads_button"
       />
