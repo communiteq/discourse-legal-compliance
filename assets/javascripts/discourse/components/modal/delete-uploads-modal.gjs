@@ -131,7 +131,7 @@ export default class DeleteUploadsModal extends Component {
       </:body>
       <:footer>
         <DButton
-          @action={{action "deleteSelectedUploads"}}
+          @action={{this.deleteSelectedUploads}}
           class="btn-primary btn-warn"
           @label="legal_compliance.delete_uploads_modal.confirm_button.label"
           @disabled={{this.hasNoSelectedUploads}}
