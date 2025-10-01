@@ -2,7 +2,7 @@
 
 # name: discourse-legal-compliance
 # about: Provides functions needed to be GDPR/CCPA/DMCA/OSA
-# version: 1.0.0
+# version: 1.0.1
 # authors: Communiteq
 # url: https://github.com/communiteq/discourse-legal-compliance
 
@@ -16,7 +16,6 @@ register_asset "stylesheets/legal_compliance.scss"
 require_relative "lib/legal_compliance/engine"
 
 after_initialize do
-
 
   register_search_advanced_filter(/upload:(.+)$/) do |posts, match|
     sha1_match = match.scan(/[a-fA-F0-9]{40}/)

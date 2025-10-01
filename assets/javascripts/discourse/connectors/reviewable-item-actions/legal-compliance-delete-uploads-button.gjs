@@ -2,7 +2,7 @@ import Component from "@glimmer/component";
 import { action, get } from "@ember/object";
 import I18n from "discourse-i18n";
 import { i18n } from "discourse-i18n";
-import { inject as service } from "@ember/service";
+import { service } from "@ember/service";
 import DButton from "discourse/components/d-button";
 import DeleteUploadsModal from "../../components/modal/delete-uploads-modal";
 
